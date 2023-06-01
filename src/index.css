@@ -55,6 +55,12 @@ input {
   padding: 10px 8px;
   outline: none;
   margin-bottom: .6rem;
+  color: var(--txt-color);
+}
+
+input::placeholder {
+  color: var(--txt-color);
+  opacity: 0.5;
 }
 
 .btn, button, input[type='submit'] {
@@ -87,4 +93,14 @@ button:hover, input[type='submit']:hover {
 
 .hide {
   display: none;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-family: 'Carter One';
+  color: var(--pri-color);
 }

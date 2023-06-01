@@ -9,8 +9,8 @@ const Cadastro = () => {
   }
 
   return (
-    <div>
-      <h2>veetask</h2>
+    <div id='register'>
+      <h2 className='logo'>veetask</h2>
       <p className='subtitle'>Cadastre-se para começar a gerenciar as suas tarefas.</p>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder='Nome' />
