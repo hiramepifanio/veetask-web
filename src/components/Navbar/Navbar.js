@@ -6,7 +6,9 @@ import { BsHouseDoorFill, BsFillPersonFill} from 'react-icons/bs'
 const Navbar = () => {
   return (
     <nav id='nav'>
-        <Link to='/'>veetask</Link>
+        <div className='logo'>
+            <Link to='/'>veetask</Link>
+        </div>
         <ul id='nav-links'>
             <li>
                 <NavLink to='/'>
