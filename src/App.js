@@ -7,15 +7,21 @@ import Cadastro from './pages/Auth/Cadastro';
 
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 
+// Components
+import Navbar from './components/Navbar/Navbar';
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/login' element={<Login/>} />
-          <Route path='/cadastro' element={<Cadastro/>} />
-        </Routes>
+        <Navbar/>
+        <div className="container">
+          <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/login' element={<Login/>} />
+            <Route path='/cadastro' element={<Cadastro/>} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );
